@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revolt Motors - Voice Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Revolt Motors Assistant</h1>
+            <p>Ask me about our electric vehicles, pricing, or book a test ride</p>
+        </header>
+        
+        <div class="chat-container">
+            <div id="chat-messages" class="chat-messages"></div>
+            
+            <div class="controls">
+                <button id="start-btn" class="btn record-btn">
+                    <span class="icon">🎤</span> Start Listening
+                </button>
+                <button id="stop-btn" class="btn stop-btn" disabled>
+                    <span class="icon">⏹️</span> Stop
+                </button>
+            </div>
+            
+            <div class="status" id="status">Ready to listen</div>
+        </div>
+        
+        <div class="wave-container" id="wave-container">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+    </div>
+
+    <audio id="audio-player" hidden></audio>
+    
+    <script src="app.js"></script>
+</body>
+</html>
