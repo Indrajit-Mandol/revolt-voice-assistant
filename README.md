@@ -14,5 +14,7 @@ A real-time conversational voice interface for Revolt Motors using the Gemini Li
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
+   git clone git remote add origin https://github.com/Indrajit-Mandol/revolt-voice-assistant.git
+   npm install
+   npm run dev or npm start
    cd revolt-gemini-chatbot
